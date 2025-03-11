@@ -10,13 +10,14 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="Logo.png" alt="Logo" class="logo">
+            <img src="SB.png" alt="Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Nos Sneakers</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Nouveautés et articles du moment</a></li>
+                    <li><a href="#">Hommes</a></li>
+                    <li><a href="#">Femmes</a></li>
+                    <li><a href="#">Enfant</a></li>
+                    <li><a href="#">Promotions</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,33 +53,64 @@
 
             <div class="controls">
                 <div class="jscolor-container">
-                    <input class="jscolor {onFineChange:'changeColor(this)'}" value="ff7f00">
+                    <input class="jscolor {onFineChange:'changeColor(this)'}" value="0FC2C0">
                 </div>
                 <div class="colors">
-                    <div class="color" style="background-color: #ff7f00" data-hex="#ff7f00" data-target="part-rouge"></div>
-                    <div class="color" style="background-color: #8cd147" data-hex="#8cd147" data-target="part-bleu"></div>
-                    <div class="color" style="background-color: #4a9ccf" data-hex="#4a9ccf" data-target="part-jaune"></div>
-                    <div class="color" style="background-color: #661f45" data-hex="#661f45" data-target="part-rouge"></div>
-                    <div class="color" style="background-color: #1e2024" data-hex="#1e2024" data-target="part-jaune"></div>
+                    <div class="color" style="background-color: #0FC2C0" data-hex="#0FC2C0" data-target="part-rouge"></div>
+                    <div class="color" style="background-color: #0CABA8" data-hex="#0CABA8" data-target="part-bleu"></div>
+                    <div class="color" style="background-color: #008F8C" data-hex="#008F8C" data-target="part-jaune"></div>
+                    <div class="color" style="background-color: #015958" data-hex="#015958" data-target="part-rouge"></div>
+                    <div class="color" style="background-color: #023535" data-hex="#023535" data-target="part-jaune"></div>
                 </div>
             </div>
 
+            <div class="size-selector">
+                <label for="size">Sélectionner votre taille :</label>
+                <div class="size-grid">
+                    <button class="size-button" data-size="37">EU 37</button>
+                    <button class="size-button" data-size="37.5">EU 37.5</button>
+                    <button class="size-button" data-size="38">EU 38</button>
+                    <button class="size-button" data-size="38.5">EU 38.5</button>
+                    <button class="size-button" data-size="39">EU 39</button>
+                    <button class="size-button" data-size="39.5">EU 39.5</button>
+                    <button class="size-button" data-size="40">EU 40</button>
+                    <button class="size-button" data-size="40.5">EU 40.5</button>
+                    <button class="size-button" data-size="41">EU 41</button>
+                    <button class="size-button" data-size="42">EU 42</button>
+                    <button class="size-button" data-size="42.5">EU 42.5</button>
+                    <button class="size-button" data-size="43">EU 43</button>
+                    <button class="size-button" data-size="44">EU 44</button>
+                    <button class="size-button" data-size="44.5">EU 44.5</button>
+                    <button class="size-button" data-size="45">EU 45</button>
+                </div>
+            </div>
+            
+            <script>
+            document.querySelectorAll('.size-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.size-button').forEach(btn => btn.classList.remove('selected'));
+                    button.classList.add('selected');
+                });
+            });
+            </script>
+            
+
             <div class="price">€149.99</div>
             <div class="rating">
-                <div>⭐⭐⭐⭐⭐</div>
-                <span>(4.8 sur 5)</span>
+                <div>★★★★☆</div>
+                <span>(4 sur 5)</span>
             </div>
 
             <div class="action-buttons">
                 <button class="btn-add-to-cart">Ajouter au panier</button>
-                <button class="btn-buy-now">Ajouter aux favoris</button>
+                <button class="btn-buy-now">Ajouter aux favoris ♡</button>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="footer-container">
-            <p>&copy; 2025 Sneakers Universe. Tous droits réservés.</p>
+            <p>&copy; 2025 Sneakers Barlot. Tous droits réservés.</p>
         </div>
     </footer>
 

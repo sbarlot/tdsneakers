@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff7f00;
+    color: #0FC2C0;
 }
 
 /* Conteneur principal */
@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 #produit-svg path:hover {
     filter: brightness(1.2); /* Augmente la luminosité */
-    stroke: #ff7f00; /* Ajoute une bordure orange autour du path */
+    stroke: skyblue; /* Ajoute une bordure orange autour du path */
     stroke-width: 2; /* Modifie l'épaisseur de la bordure */
 }
 
@@ -245,7 +245,7 @@ nav ul li a:hover {
 }
 
 .btn-add-to-cart, .btn-buy-now {
-    background-color: #ff7f00;
+    background-color: black;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -256,7 +256,8 @@ nav ul li a:hover {
 }
 
 .btn-add-to-cart:hover, .btn-buy-now:hover {
-    background-color: #e56e00;
+    background-color: #0FC2C0;
+    color: #023535;
 }
 
 footer {
@@ -287,4 +288,45 @@ footer p {
         padding-left: 0;
         text-align: center;
     }
+}
+
+.size-selector {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.size-selector label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    max-width: 300px;
+}
+
+.size-button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.size-button:hover {
+    border-color: #0FC2C0;
+}
+
+.size-button:focus,
+.size-button.selected {
+    border-color: black;
+    background-color: #0FC2C0;
+    color: #023535;
 }
